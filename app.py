@@ -1,7 +1,17 @@
 import streamlit as st
 import numpy as np
 
+st.set_page_config(
+    page_title="Audio TEST",
+    page_icon="random",
+)
+
 st.write("Test audio app")
+
+audio_file = open("chopin-valse.ogg", "rb")
+audio_bytes = audio_file.read()
+
+st.audio(audio_bytes, format="audio/ogg")
 
 sample_rate = 44100  # 44100 samples per second
 seconds = 2  # Note duration of 2 seconds
