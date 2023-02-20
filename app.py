@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="random",
 )
 
-st.write("Test audio app")
+st.write("Test audio app!")
 
 audio_file = open("chopin-valse.ogg", "rb")
 audio_bytes = audio_file.read()
